@@ -15,7 +15,7 @@
  */
 
 locals {
-  instance_count = length(var.instance_configs)
+  instance_count = var.enable == true ? length(var.instance_configs) : 0
   dns_project_id = var.dns_project_id == null ? var.project : var.dns_project_id
 }
 

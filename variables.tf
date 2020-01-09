@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+variable "enable" {
+  description = "Create the Cloud Memorystore or not"
+  type        = bool
+  default     = true
+}
+
 variable "project" {
   description = "The ID of the project in which the resource belongs to."
   type        = string
